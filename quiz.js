@@ -9,7 +9,10 @@ function checkAnswer() {
         } else {
             document.getElementById('feedback').textContent = "That's incorrect. Try again!";
         }
+    } else {
+        document.getElementById('feedback').textContent = "Please select an answer!";
+    }
     }
     
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
-}
+
